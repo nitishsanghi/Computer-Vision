@@ -1,3 +1,3 @@
 # Image Blending
 
-<img src="https://github.com/nitishsanghi/Computer-Vision/blob/main/HDR/images/output/sample/outputclahe.png" width="500" height="250">
+<img src="https://github.com/nitishsanghi/Computer-Vision/blob/main/Blending/imagefiles_set2/sourceimages/white.jpg" width="500" height="250">
