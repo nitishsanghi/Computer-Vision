@@ -4,4 +4,4 @@ Taking lane finding to the next level, I have implemented computer vision techn
 
 ![Alt Text](https://media.giphy.com/media/7R6ZOuu8IShMG7b16x/giphy.gif)
 
-![Alt Text](https://media.giphy.com/media/wJc3dzEia4v5rEb7Hz/giphy.gif)
+![](https://media.giphy.com/media/wJc3dzEia4v5rEb7Hz/giphy.gif)
