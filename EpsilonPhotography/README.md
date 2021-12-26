@@ -4,5 +4,6 @@ This project uses computer vision concepts to create an extended depth of field 
 <img src="https://github.com/nitishsanghi/Computer-Vision/blob/main/EpsilonPhotography/finalartifact.jpg" width="500" height="250">
 
 The gif below illustrates the concept of focus stacking.
+
 ![Alt Text](https://media.giphy.com/media/iuE792vgQdAUtjnjix/giphy.gif)
 
