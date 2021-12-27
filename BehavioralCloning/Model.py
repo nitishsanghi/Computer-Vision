@@ -1,9 +1,3 @@
-
-# coding: utf-8
-
-# In[1]:
-
-
 # Module Import List
 import cv2
 import os
@@ -20,12 +14,6 @@ from keras.layers import Conv2D, MaxPooling2D, convolutional
 from keras.layers import Convolution2D, Cropping2D
 from keras.callbacks import EarlyStopping # To interrupt if loss not increasing
 
-get_ipython().magic('matplotlib inline')
-
-
-# In[2]:
-
-
 # Samples list is accumulated from the csv file by opening the file and reading each row
 samples = []
 with open('/home/carnd/CarND-Behavioral-Cloning-P3/data/driving_log_clean.csv') as csvfile:
@@ -33,16 +21,8 @@ with open('/home/carnd/CarND-Behavioral-Cloning-P3/data/driving_log_clean.csv') 
     for line in reader:
         samples.append(line)
 
-
-# In[3]:
-
-
 # Samples list is split into training and test/validation sample data
 train_samples, validation_samples = train_test_split(samples, test_size = 0.2)
-
-
-# In[4]:
-
 
 # Generator used to batch images and train the model faster by avoiding memory overlaod
 def generator(samples, batch_size = 32):
@@ -96,20 +76,12 @@ def generator(samples, batch_size = 32):
             y_train = array(angles)
             yield sklearn.utils.shuffle(X_train,y_train)
 
-
-# In[5]:
-
-
 # Batch size defined
 batch_size = 32
 
 # training and validation generators defined for the fit_generator()
 train_generator = generator(train_samples, batch_size)
 validation_generator = generator(validation_samples, batch_size)
-
-
-# In[6]:
-
 
 #NVIDIA CNN used with cropping, mean centralization and normalization
 model = Sequential()
@@ -139,10 +111,3 @@ plt.legend(['training set', 'validation set'], loc='upper right')
 plt.show()
 
 model.save('model.h5')
-
-
-# In[ ]:
-
-
-
-
